@@ -1,3 +1,24 @@
+# Google Clone
+
+> A google search engine using react-js & next-js & tailwind css
+> The next js is a react framework for server-side rendering.
+
+- To set up the tailwind css onthe next-js project
+  `npm install -D tailwindcss@latest postcss@latest autoprefixer@latest`
+- To create the configure files fo tailwind (generate your tailwind.config.js and postcss.config.js files)
+  `npx tailwindcss init -p`
+- Enable the 'jit' mode in the config file for a more powerful engine for tailwind.
+  mode: 'jit',
+- Inclue the base, component, utilities directives in `/styles/globals.css`
+
+- When an image using _Image_ component isused, next-js has to be informed about it to configure the image for the project. It is configured in the _next.configure.js_ file to add the domains of the resources used in next-js.
+  `module.exports = { images: { domain: ["domain names..."] } } `
+
+## Stock
+
+- [Google logo](https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
+- [title icon](https://www.favicon.cc/?action=icon&file_id=960348)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
