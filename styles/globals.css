@@ -1,16 +1,14 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+/* Tailwind will swap these directives out at build-time with all of the styles it generates based on your configured design system. */
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-* {
-  box-sizing: border-box;
+@layer components {
+  .btn {
+    @apply bg-[#f8f9fa] p-3 rounded-md ring-gray-200 text-gray-800 hover:ring-1 focus:outline-none active:ring-gray-300 hover:shadow-md;
+  }
+  .link {
+    @apply hover:underline cursor-pointer;
+  }
 }
