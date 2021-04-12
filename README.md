@@ -14,6 +14,14 @@
 - When an image using _Image_ component isused, next-js has to be informed about it to configure the image for the project. It is configured in the _next.configure.js_ file to add the domains of the resources used in next-js.
   `module.exports = { images: { domain: ["domain names..."] } } `
 
+- Use a rest_api to invoke an api key for developer [here](https://developers.google.com/custom-search/v1/using_rest)
+- The google content search authorization [here](https://cse.google.com/cse/create/new)
+
+- A plugin for the tailwind to use a dependency
+  ` plugins: [require("@tailwindcss/line-clamp")],`
+
+- Deployed on vercel integrated to github with cli-pipeline integrated.
+
 ## Stock
 
 - [Google logo](https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
