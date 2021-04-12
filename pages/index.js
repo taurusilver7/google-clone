@@ -10,7 +10,7 @@ import { useRef } from "react";
 export default function Home() {
   const router = useRouter();
   const searchInputRef = useRef(null);
-  
+
   const search = (e) => {
     e.preventDefault();
     const term = searchInputRef.current.value;
@@ -58,10 +58,10 @@ export default function Home() {
           <MicrophoneIcon className="h-5" />
         </div>
         <div className="flex flex-col w-1/2 space-y-2 justify-center mt-8 sm:space-y-0 sm:flex-row sm:space-x-4">
-          <button onclick={search} className="btn">
+          <button onClick={search} className="btn">
             Google Search
           </button>
-          <button onclick={search} className="btn">
+          <button onClick={search} className="btn">
             I'm feelin' lucky
           </button>
         </div>
